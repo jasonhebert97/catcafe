@@ -1,0 +1,303 @@
+/* --------------------- positioning block elements ---------------------------------------------------------------------------*/
+html {
+    background-color: rgb(192,169,132);
+}
+body {
+    width: 1250px;
+    margin: 0 auto;
+    display: block;
+    font size: 1em;
+}
+#banner {
+    position: relative;
+    width: 1150px;
+    height: 300px;
+    margin: 50px auto 10px;
+}
+nav {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    float: left;
+    overflow: auto;
+    margin: 10px 25px 30px 50px;
+}
+.mainContent {
+    background-image: url(http://static.tumblr.com/fsr7cl7/3G5ok27of/cat_crate.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 660px;
+    height: 930px;
+    float: right;
+    overflow: auto;
+    margin: 10px 50px 25px 15px;
+    background-color: rgb(192,169,132);
+}
+.advertisement {
+    position: relative;
+    left: 20px;
+    width: 440px;
+    height: 440px;
+    float: left;
+    overflow: auto;
+    margin: 0px 25px 25px 25px;
+}
+#references {
+    position: relative;
+    width: 480px;
+    height: 250px;
+    overflow: auto;
+    float: left;
+    margin: 25px 25px 50px 100px;
+    background: rgb(192,169,132);
+}
+footer {
+    position: relative;
+    float: right;
+    width: 500px;
+    height: 250px;
+    margin: 25px 100px 50px 25px;
+    background-color: white;
+}
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+}
+/* -------------------------------- banner -------------------------------------------------------------------------------------*/
+#banner {
+    background-image: url(http://static.tumblr.com/fsr7cl7/gzGok27og/catbed.png);
+    background-color: rgb(192,169,132);
+}
+h1 {
+    font-family: "Kranky", cursive;
+    font-size: 5.5em;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(68,40,16);
+}
+/* -------------------------------- navigation center -------------------------------------------------------------------------*/
+nav {
+    background-color: rgb(192,169,132);
+    background-image: url(http://static.tumblr.com/fsr7cl7/4ABok27oh/catbox.png);
+    overflow: hidden;
+}
+nav div {
+    width: 150px;
+    height: 270px;
+    position: relative;
+    top: 145px;
+    left: 150px;
+}
+nav h2 {
+    font-family: "Kranky", sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: white;   
+}
+nav h2:hover {
+    color: grey;
+    cursor: pointer;
+}
+#navPrep {
+    border-top: 0px;
+}
+nav p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+    color: white;
+}
+h1:hover {
+    color: grey;
+    cursor: pointer;
+}
+/* -------------------------------- main content ------------------------------------------------------------------------------*/
+#preparation, #breeds, #adoption, #foreword {
+    width: 385px;
+    height: 520px;
+    overflow: scroll;
+    position: relative;
+    top: 270px;
+    left: 130px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+section h2 {
+    font-family: 'Prosto One', cursive;
+    font-size: 2em;
+    border-bottom: 5px solid white;
+    padding-bottom: 7px; 
+}
+section h3 {
+    font-family: 'Prosto One', cursive;
+    border-bottom: 3px solid white;
+    padding-bottom: 6px;
+    border-top: 5px solid white;
+    padding-top: 7px;
+}
+section p {
+    font-family: 'PT Mono', monospace;
+    line-height: 2em;
+}
+section span {
+    font-family: 'PT Mono', monospace;
+    border-bottom: 3px solid white;
+    padding-bottom: 1px;
+}
+#preparation {
+    display: none;
+    padding: 10px;
+}
+a:link, a:visited {
+    color: beige;
+    text-decoration: underline;
+}
+a:hover {
+    color: rosybrown;
+}
+#breeds {
+    display: none;
+    padding: 10px;
+}
+#adoption {
+    display: none;
+    padding: 10px;
+}
+#foreword {
+    display: block;
+    padding: 0px 10px 10px 10px;
+}
+/* -------------------------------- advertisement images --------------------------------------------------------------------*/
+.advertisement {
+    background-image: url(http://static.tumblr.com/fsr7cl7/Crgok27of/cardboard.png);
+    overflow: visible;
+}
+#suppliesImage {
+    padding: 20px 10px 10px 20px;
+    display: inline-block;
+    float: left;
+}
+#catFactsImage {
+    padding: 20px 20px 20px 10px;
+    display: inline-block;
+    float: right;
+}
+#videosImage {
+    padding: 10px 10px 20px 20px;
+    display: inline-block;
+    float: left;
+}
+/* -------------------------------- advertisement content --------------------------------------------------------------------*/
+#advertImages img:hover {
+    cursor: pointer;
+}
+#supplyChecklist, #funFacts, #videos {
+    z-index: 2;
+    display: none;
+    position: relative;
+    top: -650px;
+    left: 625px;
+    width: 385px;
+    height: 520px;
+    font-family: 'Prosto One', cursive;
+    font-size: 1em;
+    border-bottom: 5px solid white;
+    padding-bottom: 7px; 
+    color: white;
+    text-align: center;
+    overflow: scroll;
+}
+#supplyChecklist p, #funFacts p, #videos p {
+    font-family: 'PT Mono', monospace;
+    line-height: 1em;
+    font-size: 1.25em;
+}
+
+/* -------------------------------- citations -------------------------------------------------------------------------*/
+.citation {
+    font: "Times New Roman";
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: normal;
+    border-top: 3px solid white;
+    margin-top: 10px;
+    padding-top: 10px;
+}    
+.citation a:link, .citation a:visited {
+    color: beige;
+    text-decoration: underline;
+}
+.citation a:hover {
+    color: rosybrown;
+}
+
+
+/* -------------------------------- footer -------------------------------------------------------------------------*/
+#references {
+    border: 10px solid white;
+    border-radius: 30px 50px;
+    background: rgba(112,83,76, .6);
+    box-shadow: 3px 3px rgba(112,83,76, .6);
+}
+
+#references h2 {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+}
+
+#references ul {
+    height: 100px;
+    list-style: none;
+    position: relative;
+    left: -25px;
+    top: -25px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+
+/* -------------------------------- footer -------------------------------------------------------------------------*/
+
+#socialMedia a {
+    text-align: center;
+    padding: 10px 20px 10px 20px; 
+    z-index: 2;
+}
+#socialMedia a:link, #socialMedia a:visited {
+    color: beige;
+    text-decoration: none;
+}
+#socialMedia a:hover {
+    color: rosybrown;
+}
+footer {
+    align-content: center;
+    text-align: center;
+    background-image: url(http://static.tumblr.com/fsr7cl7/uAdok27oh/cushion.png);
+    background-color: rgb(192,169,132);
+}
+#copyrightInfo, #socialMedia {
+    position: relative;
+    top: 75px;
+}
+#copyrightInfo p {
+    font-size: 1.3em;
+    font-family: "Kranky", cursive;
+    color: white;
+    text-shadow: 2px 2px brown;
+}
+#socialMedia {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+
